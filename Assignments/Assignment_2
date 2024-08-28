@@ -1,0 +1,43 @@
+//write a program to swap a number 
+package assignments;
+
+import java.util.Scanner;
+
+public class assignment_2 {
+	static int first_num, second_num; 
+	
+    public static void method1(int first_num,int second_num) {
+    int temp=first_num;
+    first_num=second_num;
+    second_num=temp;
+     }
+    
+	public static void main(String[] args) {
+	Scanner sc= new Scanner(System.in);
+	//without using third variable
+	
+	 
+	 System.out.println("enter first number:");
+	 first_num= sc.nextInt();
+	 
+	 System.out.println("enter second number:");
+	 second_num= sc.nextInt();
+	 
+	 System.out.println("before swapping");
+	 System.out.println("First number is:"+first_num);
+	 System.out.println("Second number is:"+second_num);
+	 
+	/* first_num= first_num+second_num;
+	 second_num=first_num-second_num;
+	 first_num=first_num-second_num;*/
+	 
+	 method1(first_num,second_num);
+	 
+	 System.out.println("After swapping");
+	 System.out.println("First number is:"+first_num);
+	 System.out.println("Second number is:"+second_num);
+	 
+	 
+	}
+
+}
