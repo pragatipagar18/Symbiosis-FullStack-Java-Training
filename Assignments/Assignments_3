@@ -1,1 +1,93 @@
+//Q1.write program to accept a character and find out it is a character , digit or special symbol.
+package assignments;
 
+import java.util.Scanner;
+
+public class assignment_3 {
+
+	public static void main(String[] args) {
+		char ch;
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter any Character,Digit,Symbol:");
+ch=sc.next().charAt(0);	
+
+	if((ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z')) {
+		System.out.println("It is Alphabet");
+		
+	}
+	else if(ch>='0'&&ch<='9') {
+		System.out.println("It is Digit:");
+	}
+	else {
+		System.out.println("It is Symbol:");
+	}
+	}
+
+
+
+//Q2.write a menu driven program for basic mathematical calculation.
+
+package assignments;
+
+import java.util.Scanner;
+
+public class assignment_4 {
+
+	public static void main(String[] args) {
+		
+	Scanner sc=new Scanner(System.in);	
+	
+	int choice;
+	
+	System.out.println("Basic calculaton menu");
+	System.out.println("1:Addition");
+	System.out.println("2:Subtraction");
+	System.out.println("3:Multiplication");
+	System.out.println("4:Divison");
+	System.out.println("5:Exit");
+	System.out.println("Enter your choice (1-5):");
+	choice=sc.nextInt();
+	
+	double num1,num2,result;
+	System.out.println("Enter first number");
+	num1=sc.nextDouble();
+	System.out.println("enter second number");
+	num2=sc.nextDouble();
+	
+	switch(choice) {
+	case 1://addition
+		result=num1+num2;
+		System.out.println("Addition:"+result);
+		break;
+	
+	
+	case 2://Subtraction
+		result=num1-num2;
+		System.out.println("Substraction:"+result);
+		break;
+	
+		
+	case 3://multiplication
+		result=num1*num2;
+		System.out.println("Multiplication:"+result);
+		break;
+	
+		
+	case 4://Division
+		result=num1/num2;
+		System.out.println("Divison:"+result);
+		break;
+	
+	case 5:
+		System.out.println("exit the program...");
+		break ;
+		
+		default:
+			System.out.println("Invalid choice .Please choose a valid option.");
+	}
+	}
+
+}
+
+
+}
