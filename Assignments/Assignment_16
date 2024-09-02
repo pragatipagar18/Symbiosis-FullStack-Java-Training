@@ -1,0 +1,58 @@
+//calculate total percentage of student marks and grade them.
+
+package assignments;
+
+import java.util.Scanner;
+
+public class assignment_11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		 int marathi,eng,math,sci,hindi;
+		 double total,percentage;
+		 Scanner sc=new Scanner(System.in);
+		 
+		 System.out.println("Enter marks of Mathematics:");
+		 math=sc.nextInt();
+		 System.out.println("Enter marks of English");
+		 eng=sc.nextInt();
+		 System.out.println("Enter marks of Science:");
+		 sci=sc.nextInt();
+		 System.out.println("Enter marks of Hindi:");
+		 hindi=sc.nextInt();
+		 System.out.println("Enter marks of Marathi:");
+		 marathi=sc.nextInt();
+		 
+		 
+		 total=math+sci+marathi+hindi+eng;
+		 percentage=(total/500)*100;
+		 
+		 System.out.println(" Total marks:"+total);
+		 System.out.println(" marks Percentage :"+percentage);
+		 
+		 if(percentage>=85) 
+		 {
+			System.out.println("A Grade"); 
+		 }
+		 else if(percentage>=70)
+		 {
+			 System.out.println("B Grade");
+		 }
+		 else if(percentage>=65)
+		 {
+			 System.out.println("C Grade");
+		 }
+		 else if(percentage>=35) 
+		 {
+			 System.out.println("D Grade");
+		 }
+		 else if(percentage<=35) 
+		 {
+			 System.out.println("FAIL");
+		 }
+		 
+
+	}
+
+}
