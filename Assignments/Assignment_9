@@ -1,0 +1,35 @@
+//Swap a two number
+package assignments;
+
+import java.util.Scanner;
+
+public class swapNum_method2 {
+int num1,num2;
+public static void method2(swapNum_method2 swp) {
+	int temp=swp.num1;
+	swp.num1=swp.num2;
+	swp.num2=temp;
+}
+	public static void main(String[] args) {
+		swapNum_method2 swp=new swapNum_method2();
+		Scanner sc=new Scanner(System.in);
+
+		 System.out.println("enter first number:");
+		 swp. num1= sc.nextInt();
+		 
+		 System.out.println("enter second number:");
+		 swp.num2= sc.nextInt();
+		 
+		 System.out.println("before swapping");
+		 System.out.println("First number is:"+swp.num1);
+		 System.out.println("Second number is:"+swp.num2);
+		
+		method2(swp);
+		
+		 System.out.println("After swapping");
+		 System.out.println("First number is:"+swp.num1);
+		 System.out.println("Second number is:"+swp.num2);
+		
+	}
+
+}
