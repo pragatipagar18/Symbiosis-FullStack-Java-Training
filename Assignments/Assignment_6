@@ -1,0 +1,29 @@
+//calculate the compound interest by using user value.
+package demo;
+
+import java.util.Scanner;
+
+public class comp_interest {
+
+	public static void main(String[] args) {
+		double principal_amount, time, rate, amount, comp_interest;
+		Scanner sc= new Scanner(System.in);
+		
+		System.out.println("Enter the principal_amount:");
+		principal_amount= sc.nextDouble();
+		
+		System.out.println("Enter the time:");
+		time= sc.nextDouble();
+		
+		System.out.println("Enter the rate:");
+		rate= sc.nextDouble();
+		
+		amount= principal_amount*(Math.pow((1+rate/100),time));
+		
+		comp_interest=(amount-principal_amount);
+		System.out.println("Comp_interest:"+comp_interest);
+	
+
+	}
+
+}
