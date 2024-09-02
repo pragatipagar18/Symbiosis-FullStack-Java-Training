@@ -1,0 +1,29 @@
+//calculate the simpal intrest by using user value.
+package demo;
+
+import java.util.Scanner;
+
+public class simp_interest {
+
+	public static void main(String[] args) {
+		int principal_amount, time ;
+		double rate, simp_interest;
+		
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the principal_amount:");
+		principal_amount= sc.nextInt();
+		
+		System.out.println("Enter the time:");
+		time= sc.nextInt();
+		
+		System.out.println("Enter the rate:");
+		rate= sc.nextDouble();
+		
+		simp_interest=(principal_amount*time*rate)/100;	
+		
+		System.out.println("Simp_interest:"+simp_interest);
+	
+	}
+
+}
+
