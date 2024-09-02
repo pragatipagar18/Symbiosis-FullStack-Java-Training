@@ -1,0 +1,33 @@
+ 
+package demo;
+
+import java.util.Scanner;
+
+public class additon_userValue {
+
+	public static void main(String[] args) {
+		int num1, num2, addition, subtract, multiply, divison, reminder;
+		
+	Scanner	sc= new Scanner(System.in);
+	
+	System.out.println("enter first number:");
+	num1= sc.nextInt();
+	
+	System.out.println("enter second number:");
+	num2= sc.nextInt();
+	
+	addition = num1+ num2;
+	subtract = num1- num2;
+	multiply = num1* num2;
+	divison = num1/ num2;
+	reminder = num1% num2;
+	
+	
+	System.out.println("Addition of two numbers is:"+addition);
+	System.out.println("Subtraction of two numbers is:"+subtract);
+	System.out.println("Multiply of two numbers is:"+multiply);
+	System.out.println("Divison of two numbers is:"+divison);
+	System.out.println("Reminder of two numbers is:"+reminder);
+	}
+
+}
