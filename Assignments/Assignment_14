@@ -1,0 +1,23 @@
+//find factorial of given number
+package assignments;
+
+import java.util.Scanner;
+
+public class assignment_9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ double factorial=1;
+ double num;
+ Scanner sc=new Scanner(System.in);
+ 
+ System.out.println("Enter a Number: ");
+ num=sc.nextDouble();
+ 
+ for(int i=1;i<=num;i++) {
+	 factorial=factorial*i;
+ }
+ System.out.println("Factorial of Given number:"+factorial);
+	}
+
+}
