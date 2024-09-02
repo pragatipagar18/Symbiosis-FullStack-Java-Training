@@ -1,0 +1,29 @@
+//Calculate of average of number using array.
+package assignments;
+
+import java.util.Scanner;
+
+public class assignment_12 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ Scanner sc=new Scanner(System.in);
+ int array[]=new int[5];
+ int sum,average;
+ System.out.println("Enter array element:");
+ sum=sc.nextInt();
+ for(int i=0;i<array.length;i++)
+     {
+	 array[i]=sc.nextInt();
+     }
+	 for(int i=0;i<array.length;i++)
+	 {
+		 sum=sum+array[i];
+	 }
+	 System.out.println("Addition of Array:"+sum);
+ System.out.println("---------");
+ average=sum/array.length;
+ System.out.println("Average of an Element:"+average);
+	}
+
+}
