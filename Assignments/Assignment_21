@@ -1,0 +1,62 @@
+package demo;
+
+import java.util.Scanner;
+
+public class orderInfo {
+	private String userName,password;
+	private static int orderId;
+	static {
+		System.out.println("Welcome to  the online shoping system");
+		orderId=100;
+	}
+	public orderInfo(String userName,String password) {
+		this.userName=userName;
+		this.password=password;
+		orderId++;
+	}
+	public String toString() {
+		return "Welcome to the Online Shopping System:Your OrderId is:"+orderId;
+	}
+	void show() {
+		System.out.println("Name:"+userName);
+		System.out.println("pass"+password);
+		System.out.println("OrderId"+orderId); 
+	}
+	public static void main(String[] args) {
+		String userName,password,choice;
+		int i=0;
+		orderInfo[] orderIdRecord=new orderInfo[99];
+		Scanner sc=new Scanner(System.in);
+		do {
+			System.out.println("Do you want to add more order(yes/no)");
+			choice=sc.nextLine();
+			if( choice.equals("yes")) {
+				System.out.println("Enter your UserName:");
+				userName=sc.nextLine();
+						System.out.println("Enter your Password:");
+				password=sc.nextLine();
+				
+				if(userName.equals(password)) {
+					orderIdRecord[i]=new orderInfo(userName,password);
+					System.out.println(orderIdRecord[i]);
+					for(int j=0;j<1;j++) {
+						orderIdRecord[j].show();
+					}
+					i=i+1;
+				}
+				else {
+					System.out.println("Invlaid UserName or Paassword");
+				}
+			}
+			else if(choice.equals("no")) {
+				System.out.println("Exited.Thank You!");
+			}
+			else {
+				System.out.println("Invalid choice");
+			}
+				}
+		while(choice.equals("yes"));
+		
+	}
+
+}
