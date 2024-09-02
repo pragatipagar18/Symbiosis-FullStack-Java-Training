@@ -1,0 +1,22 @@
+//Power of an given Number
+package assignments;
+
+import java.util.Scanner;
+
+public class assignment_5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+double num1,num2,result;
+Scanner sc=new Scanner(System.in);
+
+System.out.println("Enter a number:-");
+num1=sc.nextDouble();
+System.out.println("how many power you want these number:-");
+num2=sc.nextDouble();
+
+result=Math.pow(num1, num2);
+System.out.println("The power of Given Number is :"+result);
+	}
+
+}
