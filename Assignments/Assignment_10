@@ -1,0 +1,28 @@
+//Calculate area and perimeter of rectangle
+package assignments;
+
+import java.util.Scanner;
+
+public class assignment_6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int perimeter,length,width,area;
+
+Scanner sc=new Scanner(System.in);	
+
+System.out.println("Enter lenght of an Rectanlge: ");
+length=sc.nextInt();
+System.out.println("Enter Width of an Rectangle:");
+width=sc.nextInt();
+
+area=length*width;
+perimeter=((2*length)+(2*width));
+System.out.println("The Area of Rectangle is:"+area);
+System.out.println("The Perimeter of Rectangle is:"+perimeter);
+
+
+	}
+
+	
+}
