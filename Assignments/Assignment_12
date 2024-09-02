@@ -1,0 +1,21 @@
+//Find ASCII value of given character
+package assignments;
+
+import java.util.Scanner;
+
+public class assignment_8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+char ch;
+int ascii;
+Scanner sc=new Scanner(System.in);
+
+System.out.println("Enter any Character:");
+ch=sc.next().charAt(0);
+
+ascii= ch;
+System.out.println("The ASCII value of given character is:"+ascii);
+	}
+
+}
