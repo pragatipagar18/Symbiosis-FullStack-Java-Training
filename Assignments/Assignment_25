@@ -1,0 +1,43 @@
+//Accept employee date of joining and gate is date of retirement as per company policy 58 is retirement age 
+
+package assignments;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
+import java.util.Scanner;
+
+public class assignment_18 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+      Scanner sc=new Scanner(System.in);
+
+      System.out.println("Enter your joining Year:");
+      int JoiningYear=sc.nextInt();
+      
+      System.out.println("Enter your joining Month:");
+      int JoiningMonth=sc.nextInt();
+      
+      System.out.println("Enter your joining day:");
+      int JoiningDay=sc.nextInt();
+      
+     int retirementAge=58;
+     Calendar joiningDate=Calendar.getInstance();
+     
+     joiningDate.set(JoiningYear, JoiningMonth -1,JoiningDay);
+     
+     joiningDate.add(Calendar.YEAR,retirementAge);
+     
+     int retirementYear=joiningDate.get(Calendar.YEAR);
+     int retirementmonth=joiningDate.get(Calendar.MONTH)+1;
+     int retirementDay=joiningDate.get(Calendar.DAY_OF_MONTH);
+     
+      
+      System.err.println("The employee retirement date is:"+retirementYear+"-"+String.format("%2d",retirementmonth)+"-"+String.format("%2d",  retirementDay));
+      
+    
+	}
+
+}
